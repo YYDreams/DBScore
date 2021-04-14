@@ -1,11 +1,14 @@
 {
   "pages": [
-    "pages/login/login"
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/agreement/agreement"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "豆瓣评分",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

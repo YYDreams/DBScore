@@ -1,0 +1,169 @@
+/* pages/profile/profile.wxss */
+
+/*  */
+.login-wrapper {
+  display: flex;
+  /* 垂直居中 */
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  /* 相对布局 则image height=100% 则会跟ogin-wrapper这个里面高度保持一致 */
+  position: relative;
+}
+
+/* 登录背景 */
+.login-wrapper image {
+  /* 绝对布局 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 则在按钮后面一层 */
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* 登录按钮布局 */
+.login-wrapper .login {
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  border-color: #fff;
+  border-radius: 24px;
+  background-color: #fff;
+  color: #1E4826;
+  text-align: center;
+}
+
+.items-wrappper {
+  margin-top:15px;
+}
+
+.title-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  /* 设置为两端对齐 */
+  justify-content: space-between;
+  /* 文案对齐 */
+  align-items: center;
+}
+
+/* 我的书影音 */
+.title-wrapper .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 登录查看 */
+.title-wrapper .view {
+  font-size: 14px;
+  color: #9D9D9D;
+  display: flex;
+  align-items: center;
+}
+.items{
+  margin-top: 10px;
+}
+/* 箭头 */
+.items-wrappper .arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #7F7F7F;
+  border-bottom: 2px solid #7F7F7F;
+  transform: rotate(-45deg);
+  margin-left: 7px;
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.item .icon {
+  width: 54px;
+  height: 54px;
+  margin-right: 5px;
+}
+
+.info-wrapper {
+  /* 方式一 */
+  /* width: 100%; */
+  /* 方式二 */
+  flex: 1;
+
+}
+
+.info-wrapper .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 数量 */
+.info .count {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.info .left .top {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.info .left .bottom {
+  display: flex;
+  color: #818181;
+  /* 底部对齐 0和看过 */
+  align-items: flex-end;
+}
+
+.info .bottom .text {
+  margin-bottom: 3px;
+}
+
+.info .right {
+  display: flex;
+  align-items: center;
+
+}
+
+/*  */
+.info .right .text {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #9D9D9D;
+  margin-right: 10px;
+}
+
+/* 立即开启 */
+.info .right .begin {
+
+  font-size: 14px;
+  background-color: #F5F5F5;
+  color: #4A4A4A;
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+.divider{
+  width: 200px;
+  height: 20px;
+  border-color: rgba(0, 0, 0);
+}
+
+/* 版本号 */
+.version {
+  color: #9D9D9D;
+  font-size: 12px;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  /* 水平居中 */
+  justify-content: center;
+}

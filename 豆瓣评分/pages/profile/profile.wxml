@@ -1,0 +1,43 @@
+<!--pages/profile/profile.wxml-->
+<view>
+  <view class="login-wrapper">
+    <view class="login" bindtap="login">登录</view>
+    <image src="/assets/imgs/bg_mine_login.png" mode="aspectFill" />
+  </view>
+
+  <view class="items-wrappper">
+    <!--  -->
+    <view class="title-wrapper">
+      <view class="title">我的书影音</view>
+      <view class="view">登录查看
+        <view class="arrow"></view>
+      </view>
+
+    </view>
+    <!--  -->
+    <view class="items">
+      <view class="item">
+        <image class="icon" src="/assets/imgs/ic_cat_music.png" mode="aspectFill" />
+        <view class="info-wrapper">
+          <view class="info">
+            <view class="left">
+              <view class="top">观影分析</view>
+              <view class="bottom">
+                <view class="count">0</view>
+                <view class="text">看过</view>
+              </view>
+            </view>
+            <view class="right">
+              <!-- 使用text换行 view不得行 -->
+              <text class="text">标记10部影片\n开启观影分支</text>
+              <view class="begin">立即开启</view>
+              <view class="arrow"></view>
+            </view>
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="version">版本1.0.60</view>
+</view>
